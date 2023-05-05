@@ -1,24 +1,20 @@
 import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 
 export function App () {
     return (
-        <article className='tw-followCard'>
-            <header className='tw-followCard-header'>
-                <img 
-                className='tw-followCard-avatar'
-                src="https://unavatar.io/youtube/casey" 
-                alt=" El avatar de midudev " />
-                <div className='tw-followCard-info'>
-                    <strong>Miguel Angel Duran</strong>
-                    <span className='tw-followCard-infouserName'>@midudev</span>
-                </div>
-            </header>
+        <section className='App'>
+          <TwitterFollowCard isFollowing userName="midudev" name="Miguel Angel Durán">
+            <h1>Miguel</h1>
 
-            <aside>
-                <button className='tw-followCard-button'>
-                    Seguir
-                </button>
-            </aside>
-        </article>
+          </TwitterFollowCard>
+
+
+          <TwitterFollowCard isFollowing userName="pheralb">
+            <h1>Santi</h1>
+            </TwitterFollowCard>
+        </section>
     )
 }
+
+/* NO EXISTE NEGAR EL ISFOLLOWING CON !, HAY QUE PONER {FALSE}*/

@@ -3,6 +3,13 @@
     align-items: center;
     color: #fff;
     font-size: .8rem;
+    justify-content: space-between;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .tw-followCard-header {
@@ -11,7 +18,7 @@
     gap: 4px;
 }
 
-article header div {
+.tw-followCard-info {
     display: flex;
     flex-direction: column
 }
